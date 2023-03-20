@@ -2,6 +2,7 @@ const { serverConfig, clientConfig } = require("./config/config");
 const express = require("express");
 const cors = require("cors")
 const app = express();
+app.disable("x-powered-by");
 const server = require("http").createServer(app);
 const io = require("socket.io")(server, {
   cors: { origin: [`http://${clientConfig.host}:${clientConfig.port}`] }

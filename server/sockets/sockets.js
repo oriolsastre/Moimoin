@@ -2,7 +2,7 @@ const { connection } = require('./events/connection');
 const { message2server } = require('./events/message');
 const { joinRoom, leaveRoom, newRoom } = require('./events/room');
 
-connectedUsers = [];
+let connectedUsers = [];
 
 module.exports = (io, socket) => {
   const usuari = socket.userData;

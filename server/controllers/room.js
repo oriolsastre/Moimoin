@@ -17,8 +17,4 @@ const postRoom = async (req, res) => {
     } catch (error) { return res.status(500).json(new Response(500, {message: error.name}, "There was an error", null)) }
 }
 
-const deleteRoom = async (req, res) => {
-
-}
-
 module.exports = { getRooms, postRoom }

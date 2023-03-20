@@ -17,7 +17,7 @@ const createMessage = async (user, room, message) => {
  * @param {Integer} room - room ID from where the messages are fetched 
  * @param {Integer | 20} limit - number of messages fetched
  * @param {Date | null} before - fetch messages before this timestamp
- * @returns {Array<Message>}
+ * @returns {Promise<Message[]>}
  */
 const getMessages = async (room, limit = 20, before = null) => {
     let whereCondition
