@@ -85,7 +85,7 @@ const joinRoom = (room) => {
         socket.emit('leave-room', currentRoom)
 
         localStorage.setItem('currentRoom', room)
-        let currentRoom = room;
+        currentRoom = room;
         messageHistory = true;
         chatMessages.innerHTML = '';
         socket.emit('join-room', room)
