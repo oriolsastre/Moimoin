@@ -67,7 +67,7 @@ const addUnreadAlert = (data) => {
             if (i == 19) return unreadDiv.innerHTML = '+';
             let j = parseInt(i);
             j++;
-            return unreadDiv.innerHTML = j;
+            return unreadDiv.innerHTML = `${j}`;
         }
     }
 }
@@ -75,7 +75,7 @@ const addUnreadAlert = (data) => {
 const showAlert = (user, room = 'room', join = true) => {
     let newChatAlertDiv = document.createElement('div');
     newChatAlertDiv.className = 'chatAlert';
-    newChatAlertDiv.innerHTML = `<p>${user} ${join ? `joined` : `left`} the ${room}</p>`
+    newChatAlertDiv.innerHTML = `<p>${user} ${join ? 'joined' : 'left'} the ${room}</p>`
     chatMessages.append(newChatAlertDiv)
     scrollDown(chatMessages)
 }
@@ -85,7 +85,7 @@ const joinRoom = (room) => {
         socket.emit('leave-room', currentRoom)
 
         localStorage.setItem('currentRoom', room)
-        currentRoom = room;
+        let currentRoom = room;
         messageHistory = true;
         chatMessages.innerHTML = '';
         socket.emit('join-room', room)

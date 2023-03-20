@@ -15,11 +15,11 @@ const mysqlConfig = {
   port: process.env.MYSQL_PORT || 3306,
   user: process.env.MYSQL_USER,
   password: process.env.MYSQL_PASSWORD || null,
-  name: process.env.MYSQL_NAME || "chat",
+  name: process.env.MYSQL_NAME || "xat-osr",
 };
 
 const chatAdminPswd = process.env.CHAT_ADMIN_PSWD || 1234;
 
-const JWT_Secret = process.env.JWT_SECRET || 'chatOSR'
+const JWT_Secret = process.env.JWT_SECRET || 'xatOSR'
 
 module.exports = { serverConfig, clientConfig, mysqlConfig, chatAdminPswd, JWT_Secret };
