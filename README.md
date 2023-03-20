@@ -1,4 +1,4 @@
-# Sprint 5 - Xat
+# Moimoin
 
 Xat usant _[socket.io](https://socket.io/)_ separant el client i back-end en dos servidors diferents.
 
@@ -25,9 +25,9 @@ O bé
 
 ## Descarrega el repositori
 
-Descarrega't aquesta branca _sprint5_ del repositori al teu ordinador local. Si tens GIT instal·lat ho pots fer des d'un terminal amb l'ordre
+Descarrega't aquest repositori al teu ordinador local. Si tens GIT instal·lat ho pots fer des d'un terminal amb l'ordre
 
-    git clone -b sprint5 https://github.com/oriolsastre/nodeInitialDemo --single-branch
+    git clone https://github.com/oriolsastre/Moimoin
 
 ## Instal·lació amb Docker
 
