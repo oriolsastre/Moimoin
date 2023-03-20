@@ -10,6 +10,7 @@ Chat using_[socket.io](https://socket.io/)_separating the client and back-end in
 <a href="https://socket.io/" target="_blank"><img style="margin: 10px" src="https://socket.io/images/logo.svg" alt="Socket.io" height="50" /></a>
 <a href="https://www.mysql.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/mysql-original-wordmark.svg" alt="MySQL" height="50" /></a>
 <a href="https://www.docker.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/docker-original-wordmark.svg" alt="Docker" height="50" /></a>
+<a href="https://www.docker.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/jest.svg" alt="Jest" height="50" /></a>
 </div>
 
 ## Requirements
@@ -45,7 +46,7 @@ Any changes to the environment variables that you consider necessary will need t
 
 In the folder you just downloaded you will find a file called "_.env-template_". Make a copy of it, name it "_.env_" and complete the fields inside that belong to your system. Above all, configure the credentials of your MySQL server.
 
-You should not change the port and host values ​​of both the client and the server (it refers to the backend) if it is not absolutely necessary. If you change any value, keep in mind that it may also need to be changed somewhere on both the client server (to connect with the backend API) and the backend (to enable CORS).
+Els valors del port i host tant del client com del server (fa referència al backend) no els hauries de canviar si no és absolutament necessari. En cas de canviar algun valor, tenir en compte que potser s'ha de canviar també en alguna part tant del servidor client (per connectar amb l'API del back) com al backend (per habilitar CORS).
 
 _CHAT-ADMIN-PSWD_refers to the password that the Admin user will have that is created by default when starting the chat. Choose freely by arrangement. By default or absence it will be '1234'.
 
