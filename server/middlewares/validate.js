@@ -72,7 +72,7 @@ const existsUserMW = async (req, res, next) => {
  */
 const validUserMW = (req, res, next) => {
     const checkUser = req.body.user;
-    if (/^[a-z0-9]+$/i.test(checkUser) && checkUser.length > 0 && checkUser.length <= 20) {
+    if (checkUser && /^[a-z0-9]+$/i.test(checkUser) && checkUser.length > 0 && checkUser.length <= 20) {
         return next();
     }
     return res.status(400).json(new Response(400, { message: "User name is invalid. Only alphanumeric characters." }, "There was an error"));
